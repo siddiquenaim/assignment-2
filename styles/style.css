@@ -565,13 +565,18 @@ body {
     /* Fact section */
 
     .fact-text {
+        margin: 10px;
         text-align: center;
-        margin: 50px 30px 15px;
-        width: 350px;
     }
 
+    .fact-title{
+        text-align: center;
+    }
     .fact-desc {
         width: 350px;
+        text-align: center;
+        margin: auto;
+        margin-top: 10px;
     }
 
     .fact-box-container {
@@ -616,7 +621,7 @@ body {
     }
 
     /* Footer section */
-    
+
     .footer {
         background-color: #FFF4E7;
         align-items: center;
