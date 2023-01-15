@@ -207,7 +207,7 @@ body {
     color: white;
     text-align: center;
     z-index: 9;
-    margin: 900px -775px;
+    margin: 900px -775px 0;
 }
 
 
@@ -221,7 +221,70 @@ body {
     font-size: 25px;
 }
 
-/* Media Query Section */
+/* Fact section styles  */
+
+.fact-text {
+    margin: 140px 0px 145px 175px;
+}
+
+.fact-title {
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+
+.fact-desc {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-top: 24px;
+}
+
+.fact-box-container {
+    display: flex;
+    gap: 140px;
+    justify-content: center;
+    margin: 0 175px;
+}
+
+.fact-box {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 500ms ease;
+}
+
+.fact-box:hover {
+    transform: rotate(360deg);
+    }
+
+.fact-box-img {
+    height: 46px;
+    width: 46px;
+    margin-top: 40px;
+}
+
+.fact-box-number {
+    font-weight: 600;
+    font-size: 45px;
+    color: #424242;
+    text-align: center;
+}
+
+
+.fact-box-desc {
+    font-weight: 600;
+    font-size: 20px;
+    color: #727272;
+    text-align: center;
+    margin: 0 60px 60px 60px;
+}
+
+/* Sponsor section styles */
+
+
+
+/* Media Query Styles Section  */
 
 @media only screen and (max-width:576px) {
     .nav-container {
@@ -273,6 +336,7 @@ body {
 
     .feature-list-container {
         flex-direction: column;
+        gap: 75px;
         margin: 30px;
         margin-bottom: 0;
     }
@@ -295,7 +359,7 @@ body {
     .feature-img-container {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 30px;
         align-items: center;
         justify-content: center;
         position: relative;
@@ -310,6 +374,34 @@ body {
 
     .btn-secondary {
         margin: auto;
+    }
 
-}
+    .fact-text {
+        text-align: center;
+        margin: 50px 30px;
+    }
+
+    .fact-box-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        margin: 0;
+    }
+
+    .fact-box {
+        padding: 35px;
+        text-align: center;
+        margin: 30px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .fact-box-desc{
+        margin: 0 10px 40px 10px;
+    }
+
+    .fact-box-img{
+        margin-top: 0;
+    }
 }
