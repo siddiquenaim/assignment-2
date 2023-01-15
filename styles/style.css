@@ -94,6 +94,84 @@ body {
 
 /* Main section styles */
 
+/* Work section styles */
+
+.works {
+    background-image: url(../images/works/work-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 10px;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 50px;
+    margin: 100px 150px 100px;
+}
+
+.work-text {
+    width: 540px;
+    margin: auto;
+    text-align: center;
+    border-radius: 35px;
+    background-color: #fcfbfbdb;
+}
+
+.work-title {
+    margin-top: 150px;
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+    padding-top: 20px;
+}
+
+.work-desc {
+    font-weight: 400;
+    font-size: 16px;
+    color: #2f2f2f;
+    margin-top: 24px;
+}
+
+.work-quote {
+    font-weight: 500;
+    font-size: 16px;
+    color: #131313;
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+.work-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.work-img {
+    height: 350px;
+    width: 350px;
+    border-radius: 35px;
+    transition: all 500ms ease;
+}
+
+.work-list-title {
+    text-align: center;
+    border-radius: 35px;
+    background-color: #fcfbfbdb;
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.work-img:hover {
+    border: 3px dotted #ffffff2b;
+    color: #000000;
+    background: rgba(0, 0, 0, 0);
+}
+
 /* Feature section styles */
 
 .feature {
@@ -143,6 +221,7 @@ body {
 /* Feature list styles */
 
 .feature-list-container {
+    width: 100%;
     display: flex;
     gap: 145px;
     margin: 0 140px 0 175px;
@@ -228,6 +307,7 @@ body {
 
 .fact-text {
     margin: 140px 0px 145px 175px;
+
 }
 
 .fact-title {
@@ -241,6 +321,7 @@ body {
     font-size: 16px;
     color: #727272;
     margin-top: 24px;
+    width: 550px;
 }
 
 .fact-box-container {
@@ -338,6 +419,8 @@ body {
 
 /* Media Query Styles Section  */
 
+/* For Mobile Devices */
+
 @media only screen and (max-width:576px) {
     .nav-container {
         flex-direction: column;
@@ -365,6 +448,24 @@ body {
         height: 85%;
     }
 
+    .works{
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .work-text{
+        margin: 0;
+        border-radius: 0;
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .work-list{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+
     .feature {
         flex-direction: column;
         margin-top: 50px;
@@ -389,17 +490,16 @@ body {
     .feature-list-container {
         flex-direction: column;
         gap: 75px;
-        margin: 30px;
+        margin: 0px;
         margin-bottom: 0;
+        align-items: center;
     }
 
     .feature-list-title {
         text-align: center;
         font-weight: 700;
         font-size: 30px;
-        padding: 0;
-        padding-bottom: 20px;
-        margin-top: 50px;
+        padding: 20px;
         border-left: none;
         border-bottom: 5px solid #FF900E;
     }
@@ -407,6 +507,20 @@ body {
     .feature-list-text {
         width: 100%;
         height: auto;
+        width: 350px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .feature-list-title{
+        width: 350px;
+    }
+
+    .feature-list-desc{
+        text-align: center;
+        width: 350px;
+        margin: 20px 0;
+        padding: 0;
     }
 
     .sponsor-text-container {
@@ -425,19 +539,19 @@ body {
     }
 
     .feature-list-img {
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 80%;
     }
-    
+
     .btn-secondary {
-        margin: auto;
+        margin: 40px;
     }
 
     .btn-header {
         font-weight: 700;
         font-size: 45px;
     }
-    
+
     .btn-text {
         font-weight: 500;
         font-size: 20px;
@@ -445,9 +559,13 @@ body {
 
     .fact-text {
         text-align: center;
-        margin: 50px 30px;
+        margin: 50px 30px 15px;
+           width: 350px;
     }
 
+    .fact-desc{
+        width: 350px;
+    }
     .fact-box-container {
         flex-direction: column;
         align-items: center;
@@ -483,7 +601,7 @@ body {
         gap: 75px;
     }
 
-    .footer{
+    .footer {
         background-color: #FFF4E7;
         align-items: center;
         width: 100%;
@@ -491,7 +609,8 @@ body {
         padding: 0;
     }
 
-    .footer-text{
+    .footer-text {
         padding: 20px 10px;
     }
+
 }
